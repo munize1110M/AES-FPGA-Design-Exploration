@@ -108,7 +108,7 @@ The waveform shows a 30-cycle difference between the `start` signal and the `don
 
 The second implementation fully unrolls the AES cipher into pipeline stages. Each stage performs one AES round, allowing the design to accept a new plaintext block every cycle after the initial pipeline fill.
 
-- Latency: **10 cycles**
+- Latency: **10 cycles** (initial 10 cycle latency while first cipher occurs)
 - Throughput: **1 ciphertext every cycle after startup**
 - Target clock: **100 MHz**
 
