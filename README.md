@@ -70,7 +70,7 @@ The first implementation reuses register banks across the 10 AES rounds. The dat
 
 The original architecture pipelines individual operations within each round, such as SubBytes and MixColumns, while reusing the same register banks across all rounds.
 
-> Note: the original markdown referenced `aes_original_arch.jpg`, but that image is not currently present in the project `Images` directory.
+![Blocking AES architecture](Images/aes_original_arch.jpg)
 
 Top-level registers and buffers:
 
